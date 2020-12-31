@@ -48,3 +48,19 @@
 .statut{
   margin-top: 0.5rem;
 }
+
+/* Mampitoetra mise en forme du bouton */
+.btn_{
+  width: 100px;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  box-shadow: 2px 1px 2px #aaa;
+}
+.btn_primary{
+  background: #33f;
+}
+.btn_danger{
+  background: red;
+}
