@@ -1,6 +1,5 @@
 
 import React from 'react';
-import MonBouton from './MonBouton';
 
 class SubmitButton extends React.Component {
 	constructor (props) {
@@ -9,8 +8,14 @@ class SubmitButton extends React.Component {
           isLoaded: false,
           items: []
         };
+
+    this.onClick = this.onClick.bind(this);
 	}
 
+	onClick(event) {
+		document.getElementById('text').textContent = "Vous avez cliqué sur "+this.props.label;
+  	event.preventDefault();
+	}
   componentDidMount() {
     // GET request using fetch with error handling
     fetch('https://5fe1ba7b7a9487001768177c.mockapi.io/reactdemo/v1/buttons')
@@ -28,24 +33,32 @@ class SubmitButton extends React.Component {
       return <div>Loading...</div>;
     }
     else{
+
       return ( 
-          <fragment>
-            <table >
-                <tr>
-                    <td class="parcel1" >
-                        {items.map((item, i)=>(
-                          <MonBouton key={`bouton-${i}`} label={item.label} couleur={item.color}/>
-                        ))}
-                    </td>
-                    <td className="parcel2">
-                        <div id="text" ></div>
-                    </td>
-                </tr>
-            </table>
-          </fragment>
+        <div>
+        {items.map(item=>(
+          //<li key={item.id}>
+            //{item.label}
+          //</li>
+          <li key={item.id}>
+          <button className={item.color} onClick={this.onClick}>
+        {item.label}
+        </button>
+        </li>
+
+      ))}
+      </div>
+
+
       );
       
     }
+  	//return (
+    		//<button className={this.props.background} onClick={this.onClick}>
+    		//{this.props.label}
+    		//</button>
+  	//)
+    
 	}
 }
 

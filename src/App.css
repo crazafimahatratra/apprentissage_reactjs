@@ -64,3 +64,22 @@
 .btn_danger{
   background: red;
 }
+
+.parcel1{
+  width: 10%;
+  /*background: red;*/
+}
+.parcel2{
+  width: 90%;
+  vertical-align: top;
+  text-align: left;
+  /*background: blue;*/
+}
+.mon_bouton{
+  width: 100%;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
