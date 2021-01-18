@@ -1,16 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 
-import SubmitButton from './component/SubmitButton.js';
+import Comment from './component_2/Comment.js';
 
 function App() {
-  return (
-    <div className="App">
-      <SubmitButton label="Envoyer" background="btn_primary btn_"/>
-      <br/>
-      <div id="text" ></div>
-    </div>
-  );
+	var author = 	{
+						avatarUrl:"images/toetra.png", 
+						name:"Mampitoetra"
+					};
+	var text = "Bonjour à tous, Nous sommes à la blabla"
+  	return (
+    	<div className="App">
+      		<Comment author={author} text={text} />
+    	</div>
+  	);
 }
 
 export default App;

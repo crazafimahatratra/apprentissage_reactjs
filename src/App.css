@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -82,4 +82,13 @@
   padding: 5px;
   border-radius: 10px;
   text-transform: uppercase;
+}
+.btn_color{
+  color: #fff !important;
+}
+
+
+/* Pour le component */
+.Avatar{
+  height: 50px;
 }

@@ -30,18 +30,18 @@ class SubmitButton extends React.Component {
     else{
       return ( 
           <fragment>
-            <table >
-                <tr>
-                    <td class="parcel1" >
+            <div className="row" >
+                
+                    <div className="col-sm-4" >
                         {items.map((item, i)=>(
-                          <MonBouton key={`bouton-${i}`} label={item.label} couleur={item.color}/>
+                          <MonBouton key={`bouton-${i}`} type_btn="btn btn-primary" label={item.label} couleur={item.color}/>
                         ))}
-                    </td>
-                    <td className="parcel2">
+                    </div>
+                    <div className="col-sm-8">
                         <div id="text" ></div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                
+            </div>
           </fragment>
       );
       
