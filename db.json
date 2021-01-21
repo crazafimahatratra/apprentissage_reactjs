@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "nom": "Ramanandraibe Christian",
+      "fonction": "Developpeur",
+      "avatarUrl":"images/toetra.png",
+      "comment":"Salama tompoko, inona ny vaovao",
+      "date":"14 Janvier 2021 à 10h 20min,"
+    },
+    {
+      "id": 2,
+      "nom": "Retanambelo",
+      "fonction": "Testeur",
+      "avatarUrl":"images/1.png",
+      "comment":"Salama tsara fa misaotra, ny vaovao dia tsy misy",
+      "date":"14 Janvier 2021 à 10h 30min,"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

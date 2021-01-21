@@ -1,14 +1,15 @@
 function Comment(props) {
+  console.log(props);
   return (
     <div className="Comment">
       <div className="UserInfo">
-        <UserInfo user={props.author} />
+        <UserInfo users={props} />
       </div>
       <div className="Comment-text">
-        {props.text}
+        {props.user.comment}
       </div>
       <div className="Comment-date">
-        
+        {props.user.date}
       </div>
     </div>
   );
@@ -17,17 +18,17 @@ function Comment(props) {
 function Avatar(props) {
   return (
     <img className="Avatar"
-      src={props.user.avatarUrl}
-      alt={props.user.name}
+      src={props.users.user.avatarUrl}
+      alt={props.users.user.nom}
     />
   );
 }
 function UserInfo(props) {
   return (
     <div className="UserInfo">
-      <Avatar user={props.user} />
+      <Avatar users={props.users} />
       <div className="UserInfo-name">
-        {props.user.name}
+        {props.users.user.nom}
       </div>
     </div>
   );

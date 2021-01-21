@@ -90,5 +90,29 @@
 
 /* Pour le component */
 .Avatar{
-  height: 50px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.Comment{
+  border: solid 1px #ddd;
+  /*padding: 5px;*/
+  margin: 0px 2px 5px 2px;
+  border-radius: 5px;
+  background: #eef;
+}
+.UserInfo{
+  
+  padding: 2px;
+}
+.Comment-text{
+  padding: 3px;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+.Comment-date{
+  color: #aaa;
+  font-size: 10px;
+  padding-left: 3px;
 }

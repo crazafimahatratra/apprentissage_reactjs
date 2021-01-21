@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 /*import Comment from './component_2/Comment.js';*/
-import Clock from './component_2/Clock.js';
+/*import Clock from './component_2/Clock.js';*/
+import Comment_2 from './component_2/Comment_2.js';
 
 function App() {
   /* ceci est pour le Composants et props */
@@ -21,7 +22,7 @@ function App() {
   	
     return (
       <div className="App">
-          <Clock  />
+          <Comment_2  />
       </div>
     );
 }
